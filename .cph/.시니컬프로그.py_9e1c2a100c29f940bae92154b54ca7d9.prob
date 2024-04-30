@@ -1,0 +1,1 @@
+{"name":"Local: 시니컬프로그","url":"c:\\krafton\\알고리즘 스터디\\시니컬프로그.py","tests":[{"id":1714435611878,"input":"4 5\n2 1 4 5\n1 1 1 1 1\n1 1 1 1 1\n1 1 1 1 1\n1 1 1 1 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\krafton\\알고리즘 스터디\\시니컬프로그.py","group":"local","local":true}
