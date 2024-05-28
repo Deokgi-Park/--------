@@ -12,8 +12,10 @@ elif val.count('/'):
     A, B = val.split('/')
     A = int(A,8)
     B = int(B,8)
+    # 0으로 나누는 경우 장애처리
     try:
         answer = A/B
+        # 내림
         answer = math.floor(answer) 
         answer = int(answer)
         answer = format(answer,'o')
@@ -25,19 +27,15 @@ elif val.count('*'):
     B = int(B,8)
     answer = A*B
     answer = format(answer,'o')
-else:
-    if val.count('-') == 3:
-        ga1, A, ga2, B = val.split('-')
-        A = int(A,8)
-        B = int(B,8)        
-    elif val.count('-') == 2:
+else:      
+    #한값만 음수
+    if val.count('-') == 2:
         tmp1, tmp2, tmp3 = val.split('-')
+        # 첫값이 음수
         if tmp1 == '':
             A = -int(tmp2,8)
-            B = int(tmp3,8)        
-        if tmp2 == '':
-            A = int(tmp1,8)
-            B = -int(tmp3,8)        
+            B = int(tmp3,8)          
+    #음수 없음
     else:
         A, B = val.split('-')
         A = int(A,8)
